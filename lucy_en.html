@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lucy</title>
+  <link rel="stylesheet" type="text/css" href="lucy.css">
+  <style>
+    body {
+      background-image: url(pic/배경/bg.jpg);
+    }
+    .audio-player {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .audio-controls {
+      margin-left: 20px;
+    }
+    #myAudio{
+      height:24px;
+      width:100%;
+    }
+    h1{
+      font-family:"Comic Sans MS", Serif;
+    }
+    body{
+        -ms-overflow-style: none;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+
+  <div class="celebrity-container">
+    <img class="celebrity-image" src="pic/인물/lucy.jpg" alt="루시" width="600" height="536">
+    <div class="celebrity-info">
+        <h2>LUCY</h2>
+        <p><strong>agency : </strong>Mystic Story</p>
+        <p><strong>team color : </strong>blue</p>
+        <p><strong>genre : </strong>Ambience pop, rock, electronica, R&B</p>
+        <p><strong>debut : </strong>2020.05.08</p>
+
+        <details class="member-info">
+          <summary><strong>member : </strong>Shin Ye-chan (leader)</summary>
+          <p><strong>instrument used : </strong>violin</p>
+          <p><strong>birth : </strong>1992.06.13 / Chungju-si, Chungcheongbuk-do</p>
+          <p><strong>Group affiliation : </strong>LUCY</p>
+          <p><strong>debut : </strong>2020.05.08</p>
+          <p><strong>MBTI : </strong>ISTP</p>
+          <p><strong>height : </strong>170.6cm</p>
+          <p><strong>blood type : </strong>A</p>
+          <p>
+            <a href="https://www.instagram.com/ye___chani/" target="_blank">
+              <img src="pic/아이콘/insta.png" alt="인스타" height="30" width="30"></a>
+          </p>  
+        </details>
+
+        <details class="member-info">
+          <summary><strong>member : </strong>Choi Sang-yeop</summary>
+          <p><strong>instrument used : </strong>guitar</p>
+          <p><strong>birth : </strong>1994.92.27 / Seongnam-si, Gyeonggi-do</p>
+          <p><strong>Group affiliation : </strong>LUCY</p>
+          <p><strong>debut : </strong>2020.05.08</p>
+          <p><strong>MBTI : </strong>Private</p>
+          <p><strong>height : </strong>177cm</p>
+          <p><strong>blood type : </strong>A</p>
+          <p>
+            <a href="https://www.instagram.com/yeopx2/" target="_blank">
+              <img src="pic/아이콘/insta.png" alt="인스타" height="30" width="30"></a>
+          </p>
+        </details>
+
+        <details class="member-info">
+          <summary><strong>member : </strong>Jo Won-sang</summary>
+          <p><strong>instrument used : </strong>bass</p>
+          <p><strong>birth : </strong>1996.08.15 / Gangnam-gu, Seoul</p>
+          <p><strong>Group affiliation : </strong>LUCY</p>
+          <p><strong>debut : </strong>2020.05.08</p>
+          <p><strong>MBTI : </strong>ENFP, ESTP</p>
+          <p><strong>height : </strong>184cm</p>
+          <p><strong>blood type : </strong>A</p>
+          <p>
+            <a href="https://www.instagram.com/ch0_w0n/" target="_blank">
+              <img src="pic/아이콘/insta.png" alt="인스타" height="30" width="30"></a>
+          </p>
+        </details>
+
+        <details class="member-info">
+          <summary><strong>member : </strong>Shin Gwang-il</summary>
+          <p><strong>instrument used : </strong>drum</p>
+          <p><strong>birth : </strong>1997.05.25 / Geoje-si, Gyeongsangnam-do</p>
+          <p><strong>MBTI : </strong>ISTJ</p>
+          <p><strong>height : </strong>174cm</p>
+          <p><strong>blood type : </strong>O</p>
+          <p>
+            <a href="https://www.instagram.com/gwangil_s" target="_blank">
+              <img src="pic/아이콘/insta.png" alt="인스타" height="30" width="30"></a>
+          </p>
+        </details>
+
+    </div>
+  </div>
+  <div class="song-list">
+    <h3>song list</h3>
+    <ul>
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="./pic/앨범커버/루시/개화 (Flowering).jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio controls>
+              <source src="./music/루시 (LUCY) - 개화 (Flowering).mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        Flowering
+        <hr>
+        To those who are going through difficult and difficult times, we deliver a message of comfort and support by telling them that a time will come when they will overcome the cold of winter and bloom beautifully like flowers.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2020.05.08</p>
+          <p>Lyrics - Choi Sang-yeop, Jo Won-sang</p>
+          <p>Composition - Jo Won-sang, O.YEON</p>
+          <p>
+            arrangement - Shin Ye-chan, Choi Sang-yeop, Jo Won-sang, Shin Gwang-il, O.YEON</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/개화.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/수박깨러가 (Watermelon).jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - 수박깨러가 (Watermelon).mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        Watermelon
+        <hr>
+        
+        It contains the content of putting off the worries of the gray city that comes in the hot summer for a while and going to the sea overflowing with blue waves and youth.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2020.08.13</p>
+          <p>Lyrics - Choi Sang-yeop, Jo Won-sang</p>
+          <p>Composition - Jo Won-sang</p>
+          <p>
+            arrangement - Jo Won-sang, O.YEON, Jihwan Park</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/수박깨러가.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/Jogging(조깅).jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - 조깅 (Jogging).mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        Jogging
+        <hr>
+        A song that expresses the hope that people who run along a set line like a marathon course without stopping, as if competing, will run like jogging.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2020.08.13</p>
+          <p>Lyrics - Shin Ye-chan, Choi Sang-yeop, Jo Won-sang, Shin Gwang-il</p>
+          <p>Composition - Jo Won-sang</p>
+          <p>
+            arrangement - Jo Won-sang, O.YEON, Jihwan Park</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/Jogging.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/Snooze(선잠).jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - Snooze (선잠).mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        Snooze
+        <hr>
+        
+To the gray people who wait for the night rather than the day,
+A song about your lost memories and the hope that you will find peace.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2020.11.12</p>
+          <p>Lyrics - Shin Ye-chan, Choi Sang-yeop, Jo Won-sang, Shin Gwang-il</p>
+          <p>Composition - Shin Ye-chan, Choi Sang-yeop, Jo Won-sang, Shin Gwang-il</p>
+          <p>
+            arrangement - Shin Ye-chan, Choi Sang-yeop, Jo Won-sang, Shin Gwang-il, O.YEON, Jihwan Park</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시//Snooze.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/난로.jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - 난로.mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        
+        stove
+        <hr>
+        A very lonely and lost part of youth.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2021.02.16</p>
+          <p>Lyrics - Shin Ye-chan, Choi Sang-yeop, Jo Won-sang, Shin Gwang-il</p>
+          <p>Composition - Jo Won-sang, O.YEON</p>
+          <p>
+            arrangement - Shin Ye-chan, Choi Sang-yeop, Jo Won-sang, Shin Gwang-il, O.YEON, Jihwan Park</p>
+        </details class="song-info">
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/난로.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/One by One.jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - One by One.mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        One by One
+        <hr>
+        
+A song that impresses with its contrast between the melody, which races forward with a heart that cannot be hidden, as if bursting with excitement, and the lyrics, which promise to take one step at a time in line with the speed of one's lover.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2021.06.16</p>
+          <p>Lyrics - Choi Sang-yeop, Jo Won-sang, Hong Isaac</p>
+          <p>Composition - Jo Won-sang, O.YEON, Younghoon Choi</p>
+          <p>
+            arrangement - Jo Won-sang, O.YEON, Younghoon Choi,Jihwan Park</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/One by One.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/Oh-eh.jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - Oh-eh.mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        Oh-eh
+        <hr>
+        Bright and romantic colors are for daytime love, and dynamic and powerful colors are for nighttime love.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2022.04.07</p>
+          <p>Lyrics - Jo Won-sang</p>
+          <p>Composition - 
+            Wonseok Lee (of Daybreak)</p>
+          <p>
+            arrangement - Jo Won-sang , O.YEON , Younghoon Choi</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/Oh-eh.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/채워 (Fill it up).jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - Fill it up (채워).mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        Fill it up
+        <hr>
+        
+They hope that their music will be a new spark for someone.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2023.02.23</p>
+          <p>Lyrics - Jo Won-sang, Minjae Hwang</p>
+          <p>Composition - Jo Won-sang, O.YEON, Younghoon Choi</p>
+          <p>
+            arrangement - Jo Won-sang, O.YEON, Younghoon Choi</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/채워.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/아지랑이(Haze).jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - 아지랑이 (Haze).mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        Haze
+        <hr>
+        
+We are still beings who give someone love and the strength to live, and through music, a message of comfort remains next to the listener for a long time.       
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2023.08.17</p>
+          <p>Lyrics - Jo Won-sang, Eunsong Lee</p>
+          <p>Composition - Jo Won-sang, O.YEON, Younghoon Choi, Eunsong Lee</p>
+          <p>
+            arrangement - Jo Won-sang, O.YEON, Younghoon Choi, T-lack(HIGHBRID)</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/아지랑이.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div class="music">
+          <div class="box">
+            <img class="album-image" id="album-image" src="pic/앨범커버/루시/Hot! (뜨거).jpg" alt="">
+          </div>
+          <div class="audio-box">
+            <audio id="myAudio" controls>
+              <source src="./music/루시 (LUCY) - Hot! (뜨거).mp3" type="audio/mp3">
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>        
+        <br>
+        Hot!
+        <hr>
+        In the hot summer, the EDM sound that cools the speaker's desire to go out in search of a loved one and the cyber-like sound that conveys the desire to rush through the screen to the other person add to the fun of listening, and the FX placed at the right place add to the sense of immersion in the song.
+        <details class="song-info">
+          <summary>
+            song information</summary>
+          <p>Release - 2023.08.17</p>
+          <p>Lyrics - Jo Won-sang, Eunsong Lee</p>
+          <p>Composition - Jo Won-sang, O.YEON, Younghoon Choi</p>
+          <p>
+            arrangement - Jo Won-sang, O.YEON, Younghoon Choi, T-lack(HIGHBRID)</p>
+        </details>
+        <div class="popup" id="popup">
+          <!-- Popup content goes here -->
+          <div class="close-box">
+            <img src="./pic/아이콘/ic_close.svg" alt="">
+          </div>
+          <iframe src="./가사/루시/Hot!.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+        </div>
+      </li>
+  </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+figure {
+    transition: opacity 0.2s; 
+    position: relative; 
+    margin: 10px; 
+    /* max-width: 20% */
+    max-width: max-content;
+    max-height: max-content;
+    float: left;
+    z-index: -1;
+}
+
+figure img {
+    width: 350px;
+    height: 450px;
+}
+
+figure figcaption {
+    color: #fff;
+    bottom: 70px; 
+    opacity: 0;
+    position: absolute; 
+    text-align: center; 
+    width: 100%;
+    transition: all .3s ease;
+}
+
+
+figure .gallery-img {
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+    overflow: hidden
+}
+
+figure:hover .gallery-img {
+    background-color: #615f5f
+}
+
+figure:hover img {
+    transform: scale(1.1, 1.1);
+    transition: all .3s ease;
+    opacity: 0.15;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    transition: all .3s ease; 
+}
+
+  .gallery-img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  body {
+    background-image: url(pic/배경/bg.jpg);
+  }
+  h1{
+    font-family:"Comic Sans MS", Serif;
+  }
+  body{
+      -ms-overflow-style: none;
+  }
+  
+  ::-webkit-scrollbar {
+      display: none;
+  }   

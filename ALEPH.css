@@ -1,0 +1,165 @@
+body {
+  background-image: url(pic/배경/bg.jpg);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  /* background-color: #333; */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu {
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.celebrity-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.celebrity-image {
+  width: 350px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.album-image{
+    width:200px;
+    height:200px;
+    border-radius:4px
+}
+
+.celebrity-info {
+  flex: 1;
+}
+
+.song-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.song-list ul::-webkit-scrollbar {
+    display: none;
+}
+
+.song-list li {
+  flex: 0 1 calc(10% - 20px);
+  width: 230px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff80;
+  text-align: center;
+  border-radius: 6px;
+  white-space: normal;
+}
+
+.song-info {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.song-info p {
+  margin: 5px 0;
+}
+
+.song-details {
+  padding: 10px;
+}
+
+h1{
+  font-family:"Comic Sans MS", Serif;
+}
+
+#myAudio{
+  height:24px;
+  width:100%;
+}
+
+body{
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*popup*/
+.popup {
+  display: none;
+  position: fixed;
+  padding: 0;
+  width: 375px;
+  height: 550px;
+  background:#fff;
+  box-sizing: border-box;
+  top: 50%; /* 추가된 부분: 화면 상단에서 50% 위치에 고정 */
+  left: 50%; /* 추가된 부분: 화면 좌측에서 50% 위치에 고정 */
+  transform: translate(-50%, -60%);
+  z-index: 50;
+}
+.close-box {
+  position: absolute;
+}
+
+/*앨범 오디오*/
+.music {
+  position: relative;
+  width:200px;
+  height:200px;
+  background-color: #f1f3f4;
+}
+
+.music .box {
+  position: relative;
+  width:200px;
+  height:200px;
+}
+
+.music .box img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width:200px;
+  height:200px;
+  object-fit: cover;
+}
+
+.music audio {
+  width: 100%;
+  outline: none;
+  /* transform: translate(0, -464%); */
+  transform: translate(0, -100%);
+}
+
+.music audio::-webkit-media-controls {
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: #f1f3f47d;
+  padding: inherit;
+}
+
+.music audio::-webkit-media-controls-enclosure {
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: #f1f3f400;
+}

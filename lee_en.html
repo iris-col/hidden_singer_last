@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Lee Jun Hyung</title>
+  <link rel="stylesheet" type="text/css" href="lee.css">
+  <style>
+    body {
+      background-image: url(pic/배경/bg.jpg);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      /* background-color: #333; */
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .menu {
+      text-align: center;
+    }
+
+    nav ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .celebrity-container {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .celebrity-image {
+      width: 350px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .album-image{
+        width:200px;
+        height:200px;
+        border-radius:4px
+    }
+
+    .celebrity-info {
+      flex: 1;
+    }
+
+    .song-list ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      white-space: nowrap;
+      overflow-x: scroll;
+    }
+
+    .song-list ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .song-list li {
+      flex: 0 1 calc(10% - 20px);
+      width: 230px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #ffffff80;
+      text-align: center;
+      border-radius: 6px;
+      white-space: normal;
+    }
+
+    .song-info {
+      margin-top: 10px;
+      text-align: left;
+    }
+
+    .song-info p {
+      margin: 5px 0;
+    }
+
+    .song-details {
+      padding: 10px;
+    }
+
+    h1{
+      font-family:"Comic Sans MS", Serif;
+    }
+
+    body{
+        -ms-overflow-style: none;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+    
+      <div class="celebrity-container">
+        <img class="celebrity-image" src="pic/인물/lee.jpeg" alt="연예인 이미지">
+        <div class="celebrity-info">
+            <h2>Lee Jun Hyung</h2>
+            <p><strong>birth:</strong> 1998.07.11. Seoul</p>
+            <p><strong>Group affiliation:</strong> Yudabin Band</p>
+            <p><strong>debut:</strong> 2019.10.10 EP album [Monologue]</p>
+            <p><strong>MBTI:</strong> INFJ</p>
+            <a href="https://www.instagram.com/ruen14/" target="_blank">
+            <img src="pic/아이콘/insta.png" alt="인스타" height="30" width="30"></a>
+            <a href="https://www.youtube.com/channel/UCNnk64lsDN2wSFCYFEOJ4WA" target="_blank">
+            <img src="pic/아이콘/youtube.png" alt="유튜브" height="30" width="30"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="song-list">
+        <ul>
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/이글루.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - 이글루.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>
+                <br>
+                igloo
+                <hr>
+                "I can't do anything without you."
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        Release-2019.12.12.<br>
+                        genre-
+                        indie, rock<br>
+                        Composition-Lee Jun Hyung<br>
+                        Lyrics-Lee Jun Hyung<br>
+                        arrangement-Lee Jun Hyung
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/이글루.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/꽃밭.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - 꽃밭.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>
+                <br>
+                flower garden
+                <hr>
+                "beautiful unrequited love song"
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        Release-2019.10.10<br>
+                        genre-Rock/Fork<br>
+                        Composition-Lee Jun Hyung<br>
+                        Lyrics-Lee Jun Hyung<br>
+                        arrangement-Lee Jun Hyung, Hanonn
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/꽃밭.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+    
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/꽃밭.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - monologue.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>
+                <br>
+                Monologue
+                <hr>
+                "It sings of loneliness at the end of autumn when the leaves fall."
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        
+                    Release-2019.10.10.<br>
+                    genre-Rock/Fork<br>
+                    Composition-Lee Jun Hyung<br>    
+                    Lyrics-Lee Jun Hyung<br>
+                    arrangement-Lee Jun Hyung, Hanonn
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/Monologue.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+    
+    
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/꽃밭.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - Fly away.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>                
+                <br>
+                Fly away
+                <hr>
+                “I hope that all of us who have fallen due to failure will overcome the pain and fly far away.”
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        
+                        Release-2019.10.10.<br>
+                        genre-Rock/Fork<br>
+                        Composition-Lee Jun Hyung<br>                      
+                        Lyrics-Lee Jun Hyung<br>
+                        arrangement-Lee Jun Hyung, Hanonn
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/Fly away.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+
+    
+    
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/유토피아.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - Sleep.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>
+                <br>
+                UTOPIA
+                <hr>
+                “Even when I sleep or feel sad, you always come to me.”
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        
+                        Release-2022.09.15.<br>
+                        genre-Rock/Fork<br>
+                        Composition-Lee Jun Hyung<br>  
+                        Lyrics-Lee Jun Hyung<br>
+                        arrangement-Lee Jun Hyung
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/UTOPIA.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+    
+    
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/유토피아.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - Sleep.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>                
+                <br>
+                Sleep
+                <hr>
+                “On nights when I couldn’t sleep, I desperately hoped to reach sleep.”
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        
+                        Release-2022.09.15.<br>
+                        genre-Rock/Fork<br>
+                        Composition-Lee Jun Hyung<br>                                        
+                        Lyrics-Lee Jun Hyung<br>
+                        arrangement-Lee Jun Hyung
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/Sleep.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+
+    
+    
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/유토피아.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - 아이.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>                
+                <br>
+                kid
+                <hr>
+                A story about an adult whose body has only grown.
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        
+                        Release-2022.09.15.<br>
+                        genre-Rock/Fork<br>
+                        Composition-Lee Jun Hyung<br>        
+                        Lyrics-Lee Jun Hyung<br>
+                        arrangement-Lee Jun Hyung
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/아이.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+
+    
+    
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/함께할수있기를.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - 함께 할 수 있기를.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>                
+                <br>
+                I hope we can be together<hr>
+                lyrical lyrics and fairytale melodies
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        
+                        Release-2022.04.16.<br>
+                        genre-OST<br>
+                        Composition-Janes, Naiv<br>         
+                        Lyrics-Janes<br>
+                        arrangement-Janes
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/함께할 수 있기를.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+
+    
+    
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/summer.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - Summer.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>                
+                <br>
+                Summer!<hr>
+                "music with travel"
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        
+                        Release-2023.08.13.<br>
+                        genre-indie<br>
+                        Composition-Lee Jun Hyung<br> 
+                        Lyrics-Lee Jun Hyung<br>
+                        arrangement-Lee Jun Hyung
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/Summer!.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+
+    
+    
+            <li>
+                <div class="music">
+                    <div class="box">
+                        <img class="album-image" id="album-image" src="pic/앨범커버/이준형/꽃밭.jpg" alt="#">
+                    </div>
+                    <div class="audio-box">
+                        <audio id="myAudio" controls>
+                            <source src="./music/이준형 - 을왕리.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                  </div>
+                </div>                
+                <br>
+                Eulwangri
+                <hr>
+                Our lonely and sentimental love and memories.
+                <details class="song-info">
+                    <summary>
+                        song information</summary>
+                    <p>
+                        
+                        Release-2021.01.11.<br>
+                        genre-Rock/Fork<br>
+                        Composition-Lee Jun Hyung<br> 
+                        Lyrics-Lee Jun Hyung<br>
+                        arrangement-Lee Jun Hyung
+                    </p>
+                </details>
+                <div class="popup" id="popup">
+                    <!-- Popup content goes here -->
+                    <div class="close-box">
+                        <img src="./pic/아이콘/ic_close.svg" alt="">
+                    </div>
+                    <iframe src="./가사/이준형/을왕리.html" width="100%" height="100%" frameborder="0" style="overflow-y: hidden; border: 1px solid #666;"></iframe>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
