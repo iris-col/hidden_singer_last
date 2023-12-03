@@ -1,0 +1,36 @@
+#qna{
+    display:none;
+}
+.qBox{
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 80%;
+}
+.answerList{
+    background-color: white;
+    border-radius: 20px;
+    display: block;
+    width: 80%;
+    border: 0px;
+    font-size: 20px;
+}
+.answerList:hover,.answerList:focus{
+    background-color: paleturquoise;
+    color:white;
+}
+.status{
+    height: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+.statusBar{
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e4f5fc+0,bfe8f9+50,9fd8ef+51,2ab0ed+100;Blue+Gloss+%235 */
+    background: linear-gradient(to bottom,  rgba(228,245,252,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgba(42,176,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+    border-radius: 20px;
+}
